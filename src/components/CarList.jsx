@@ -6,15 +6,16 @@ function CarList() {
   const count = useSelector((state) => state.cars.count);
   const dispatch = useDispatch();
 
-  const onClick = (car) => {
+  const onClick = (id) => {
     // Yapılacak: Arabayı silin
-    dispatch(removeCar(car));
-  };
+      dispatch(removeCar(id)); 
+    };
+  
 
-  const renderedCars = cars.map((car, i) => {
+  const renderedCars = cars.map((car) => {
     return (
       <div
-        key={i}
+        key={car.id}
         className="flex justify-between items-center bg-white p-4 m-4 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-50 transition-colors duration-300"
       >
         <p className="text-xl font-semibold">
@@ -22,7 +23,7 @@ function CarList() {
         </p>
         <button
           className="bg-red-600 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-full shadow-md transition-all duration-300"
-          onClick={() => onClick(car)}
+          onClick={() => onClick(car.id)}
         >
           Sil
         </button>
