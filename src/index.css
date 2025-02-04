@@ -1,0 +1,63 @@
+.car-form {
+ width: 500px;
+ margin-top: 15px;
+ padding: 15px;
+}
+
+
+.car-form .panel {
+ padding: 10px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.car-list p {
+ font-size: 1.5rem;
+ border-bottom: 1px solid gray;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.car-list .no-cars {
+ font-style: italic;
+ display: block;
+ margin: 20px;
+}
+
+.total {
+ font-size: 2.5rem;
+}
+
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+.button-delete{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-delete:hover {
+    background-color: #da190b;
+}
+  
